@@ -1,0 +1,47 @@
+# LAMMPS Input Script for Silicon Oxidation with H2O using ReaxFF
+# Simulation of Si surface oxidation by water vapor with reactive force field
+# ReaxFF provides reactive bonding/breaking for oxidation chemistry
+
+# Initialize simulation
+units           real
+atom_style      charge
+boundary        p p f
+
+# Create simulation box and atoms
+read_data       si_h2o_system.data
+
+# ReaxFF force field
+# Using SiO2 reactive force field (Fogarty et al. 2010)
+pair_style      reax/c NULL safezone 2.0 mincap 100
+pair_coeff      * * ffield.reax.Si_O_H Si O H
+
+# Neighbor list for ReaxFF
+neighbor        2.0 bin
+neigh_modify    every 10 delay 0 check no
+
+# Timestep - ReaxFF typically uses smaller timesteps
+timestep        0.25
+
+# Thermostat - NVT ensemble with Berendsen thermostat
+fix             1 all nvt temp 300.0 1000.0 100.0
+
+# Add water molecules randomly above Si surface
+region          water_region block INF INF INF INF 20.0 40.0 units box
+fix             2 all pour 50 3 12345 region water_region vz -1.0 -0.5 H2O
+
+# Calculate per-atom properties for analysis
+compute         q all property/atom q
+compute         coordination all coord/atom cutoff 2.5 group all
+
+# Output settings
+thermo          100
+thermo_style    custom step temp press pe ke etotal
+dump            1 all custom 100 si_oxidation_reaxff.lammpstrj id type x y z q vx vy vz
+
+# Output ReaxFF bond information
+dump            2 all reax/c 100 bonds.txt bonds
+
+# Run simulation
+run             100000
+
+write_data      si_oxide_final_reaxff.data
