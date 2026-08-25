@@ -1,0 +1,160 @@
+  Reactive Force Field for Si/O/H
+  Based on Fogarty et al., J. Chem. Phys. 132, 174703 (2010)
+  Modified for Si oxidation by H2O
+
+39         ! Number of general parameters
+ 50.0000 ! Overcoordination parameter
+  9.6093 ! Overcoordination parameter
+  1.6310 ! Valency angle conjugation parameter
+  1.7224 ! Triple bond stabilisation parameter
+  6.8702 ! Triple bond stabilisation parameter
+ 15.0000 ! C2-correction
+  0.0000 ! Excess atom electronegativities (not used)
+  7.0000 ! Multibody 3-body sum rule (Bur)
+ 12.4430 ! Multibody 3-body parameter
+ 13.3640 ! Lone pair electron parameter
+ -0.5625 ! Valence undercoordination default parameter
+  5.0000 ! Valence angle conjugation parameter
+  4.0000 ! Valence angle conjugation parameter  2nd
+  2.9294 ! Lone pair dative bonding parameter
+ 12.7930 ! Electronegativity equalization tau
+  0.5000 ! Electronegativity equalization kappa
+  1.0588 ! Electronegativity equalization J
+  4.0000 ! Electronegativity equalization delta
+  7.0000 ! Electronegativity equalization gamma
+  0.9745 ! Electronegativity equalization zeta
+  0.3565 ! Electronegativity equalization eta  
+  0.6991 ! Electronegativity equalization theta
+ 10.0087 ! Electronegativity equalization zeta 2nd
+  2.7588 ! Double bond/angle sum rules flag
+  0.0969 ! Double bond sum rule overcoordination
+  6.3172 ! Valence angle angle sum rule parameter
+  1.0493 ! Overcoordination undercoordination parameter
+ 10.9381 ! Overcoordination undercoordination parameter
+  0.9236 ! Undercoordination cap
+ 40.3112 ! Overcoordination valence angle sum rule parameter
+  2.6115 ! Undercoordination valence angle sum rule parameter  
+  0.6000 ! Electronegativity equalization reversibility
+  0.0000 ! Electronegativity equalization reversibility 2
+  6.9290 ! Electronegativity equalization reversibility 3
+  0.0000 ! Electronegativity equalization irreversibility
+  0.0000 ! Electronegativity equalization irreversibility 2
+  0.0000 ! Electronegativity equalization irreversibility 3
+
+3 ! Nr of atoms
+Si O H
+
+      Si
+   14.0000 ! Mass number
+    4.0000 ! Number of valence electrons
+    0.0000 ! Atomic number
+    0.0000 ! Atomic number 2
+    0.0000 ! Atomic number 3
+    0.0000 ! Atomic number 4
+    0.0000 ! Atomic number 5
+  -28.5000 ! Ionization potential
+   -4.0000 ! Electron affinity
+    5.1517 ! Valency angle conjugation
+    2.6962 ! Overcoordination correction
+    1.6640 ! Undercoordination correction
+   79.2061 ! Undercoordination correction 2
+   -3.5265 ! Undercoordination correction 3
+   33.2894 ! Triple bond stabilisation energy
+    5.9666 ! Triple bond stabilisation parameter
+   -2.6022 ! Triple bond parameter 2
+   10.2645 ! Quadruple bond parameter
+    9.0000 ! Atoms in molecule (not used)
+   -2.3873 ! Electronegativity equalization tau
+   -0.1000 ! Electronegativity equalization gamma
+    9.2450 ! Electronegativity equalization kappa
+   19.2340 ! Double bond sum rule parameter
+    5.0823 ! Valence angle sum rule parameter
+    1.0493 ! Lone pair electron parameter
+   13.5366 ! Double bond/angle sum rules flag
+    0.6235 ! Overcoordination parameter
+   10.0183 ! Overcoordination parameter
+   13.2830 ! Electronegativity equalization parameter
+   -70.5044 ! Electronegativity equalization parameter
+
+      O
+    8.0000 ! Mass number
+    6.0000 ! Number of valence electrons
+    0.0000 ! Atomic number
+    0.0000 ! Atomic number 2
+    0.0000 ! Atomic number 3
+    0.0000 ! Atomic number 4
+    0.0000 ! Atomic number 5
+  -47.4831 ! Ionization potential
+   -7.0000 ! Electron affinity
+    2.9000 ! Valency angle conjugation
+    7.3890 ! Overcoordination correction
+    0.8563 ! Undercoordination correction
+   15.0376 ! Undercoordination correction 2
+    0.0000 ! Undercoordination correction 3
+   58.1143 ! Triple bond stabilisation energy
+    3.6426 ! Triple bond stabilisation parameter
+   -0.6580 ! Triple bond parameter 2
+    0.0000 ! Quadruple bond parameter
+    9.0000 ! Atoms in molecule (not used)
+   -1.9493 ! Electronegativity equalization tau
+   -0.0250 ! Electronegativity equalization gamma
+    7.5000 ! Electronegativity equalization kappa
+   13.6725 ! Double bond sum rule parameter
+   10.2171 ! Valence angle sum rule parameter
+    7.8831 ! Lone pair electron parameter
+    2.2175 ! Double bond/angle sum rules flag
+    0.0000 ! Overcoordination parameter
+   10.0183 ! Overcoordination parameter
+    8.0000 ! Electronegativity equalization parameter
+  -107.6376 ! Electronegativity equalization parameter
+
+      H
+    1.0000 ! Mass number
+    1.0000 ! Number of valence electrons
+    0.0000 ! Atomic number
+    0.0000 ! Atomic number 2
+    0.0000 ! Atomic number 3
+    0.0000 ! Atomic number 4
+    0.0000 ! Atomic number 5
+  -10.2293 ! Ionization potential
+   -3.7243 ! Electron affinity
+    1.0000 ! Valency angle conjugation
+    2.0000 ! Overcoordination correction
+    2.0000 ! Undercoordination correction
+    6.0000 ! Undercoordination correction 2
+   -4.0000 ! Undercoordination correction 3
+    0.0000 ! Triple bond stabilisation energy
+    0.0000 ! Triple bond stabilisation parameter
+    0.0000 ! Triple bond parameter 2
+    0.0000 ! Quadruple bond parameter
+    9.0000 ! Atoms in molecule (not used)
+    0.0000 ! Electronegativity equalization tau
+    0.0000 ! Electronegativity equalization gamma
+    7.0445 ! Electronegativity equalization kappa
+    0.0000 ! Double bond sum rule parameter
+    0.0000 ! Valence angle sum rule parameter
+    0.0000 ! Lone pair electron parameter
+    0.0000 ! Double bond/angle sum rules flag
+    0.0000 ! Overcoordination parameter
+   10.0183 ! Overcoordination parameter
+   14.0000 ! Electronegativity equalization parameter
+  -95.4930 ! Electronegativity equalization parameter
+
+8 ! Nr of bond types
+  Si O  159.0934  99.9745  78.0000 -0.7738 -0.7364  1.0000  0.0000 -0.2341  8.1766  1.0000 -0.1000  8.0081
+  Si Si 100.0397  71.7632  30.0000 -0.7364 -0.7364  1.0000  0.0000 -0.1461 10.5198  1.0000 -0.1000  7.8593
+  O O   60.0000 199.9962 100.0000 -0.1094  0.3687  0.0000  1.0000 -0.3000  7.0000  1.0000 -0.1062  4.2790
+  Si H   44.2088  59.3781  50.0000 -0.4294 -0.4294  0.0000  0.0000 -0.1000  5.0000  1.0000 -0.1000  6.0000
+  O H   70.0000  55.1078  50.0000 -0.3566 -0.3451  1.0000  0.0000 -0.1000  6.0000  1.0000 -0.1000  7.4833
+  H H    0.0000   0.0000   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  1.0000 -0.1000  6.0000
+  Si Si 100.0397  71.7632  30.0000 -0.7364 -0.7364  1.0000  0.0000 -0.1461 10.5198  1.0000 -0.1000  7.8593
+  O O   60.0000 199.9962 100.0000 -0.1094  0.3687  0.0000  1.0000 -0.3000  7.0000  1.0000 -0.1062  4.2790
+
+3 ! Nr of angle types
+  Si O Si   83.8651   1.0400 -0.3889  1.0000 -0.9273  1.0000
+  O Si O    80.7324   1.0400 -0.3000  1.0000 -0.0590  1.0000
+  O Si Si   88.6338   1.0400 -0.3000  1.0000 -0.6762  1.0000
+
+0 ! Nr of torsion types
+
+0 ! Nr of hydrogen bond types
